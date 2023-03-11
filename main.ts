@@ -1,5 +1,6 @@
 function jedRovne () {
     wuKong.setAllMotor(-80, -80)
+    wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S7, 20)
     basic.showIcon(IconNames.House)
 }
 input.onButtonPressed(Button.A, function () {
@@ -7,6 +8,7 @@ input.onButtonPressed(Button.A, function () {
 })
 function jedDoleva () {
     wuKong.setAllMotor(0, -80)
+    wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S7, 72)
     basic.showLeds(`
         . . # . .
         . # # # #
@@ -30,6 +32,7 @@ input.onButtonPressed(Button.B, function () {
 })
 function jedDoprava () {
     wuKong.setAllMotor(-80, 0)
+    wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S7, 72)
     basic.showLeds(`
         . . # . .
         # # # # .
